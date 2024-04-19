@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 1</title>
+    <title>atividade geral</title>
+    <style>
+        .caixa{
+            border: 5px solid white;
+            padding: 10px;
+            margin: 10px;
+            width: 800px;
+            height: 800px;
+            margin-top: 100px;
+            margin-right: 900px;
+            background-color: black;
+        }
+        .caixa h1{
+            text-align: center;
+        }
+        .caixa p{
+            text-align: center;
+        }
+        body{
+            background-color: gray;
+        }
+        h1{
+            color: white;
+        }
+        h1{
+            font-style: normal;
+        }
+        p{
+            color: white;
+        }
+        p{
+            font-size: 150%;
+        }
+        img{
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <label>Primeiro nome:</label><br>
-        <input type="text"><br>
-        <label>Email:</label><br>
-        <input type="email"><br>
-        <label>Senha:</label><br>
-        <input type="password"><br>
-        <label>Extra</label><br>
-        <textarea></textarea>
-        <br>
-        <input type="submit" value="Enviar" ><br>
-    </form>
+    <div class="caixa">
+        <img src="data:image/jpeg;base64,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" alt="recarregue a pagina " width="800" height="600">
+        <h1>Eytor Santos Assunção</h1>
+        <p>Idade: 18 anos</p>
+        <p><strong>Decidir realizar esse curso afim de me afeiçoar a essa materia e ramo, pois tenho grande paixão a essa área e afins.</strong></p>
+    </div>
 </body>
 </html>
